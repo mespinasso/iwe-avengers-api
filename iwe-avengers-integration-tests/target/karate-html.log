@@ -1,129 +1,428 @@
-12:55:18.414 karate.env system property was: null 
-12:55:19.049 request:
-1 > GET https://www.marvel.com/avengers
+20:42:34.717 karate.env system property was: null 
+20:42:34.971 request:
+1 > GET https://4r0rh8hgzd.execute-api.us-east-1.amazonaws.com/dev/avengers/aaaa-bbbb-cccc-dddd
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
-1 > Host: www.marvel.com
+1 > Host: 4r0rh8hgzd.execute-api.us-east-1.amazonaws.com
 1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_112)
 
-12:55:19.985 response time in milliseconds: 932
+20:42:35.787 response time in milliseconds: 816
 1 < 200
-1 < Age: 3669
 1 < Connection: keep-alive
-1 < Content-Length: 13750
-1 < Content-Type: text/html; charset=UTF-8
-1 < Date: Sun, 05 Aug 2018 15:55:24 GMT
-1 < Expires: Sun, 05 Aug 2018 16:54:15 GMT
-1 < P3P: CP="ALL DSP COR NID CURa TAIa OTPi OUR BUS UNI INT PRE"
-1 < Server: Apache
-1 < Strict-Transport-Security: max-age=31536000; includeSubDomains
-1 < X-ServerNickName: terrigen-jewel-prod02
-1 < X-UA-Compatible: IE=Edge
-                            <!DOCTYPE html>
-                            <html>
-                              <head>
-                            
-                                <meta http-equiv="Content-Type" content="text/html; charset=utf-8"><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
-                                <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
-                            
-                                <title>Avengers: Infinity War | Trailer & Official Movie Site | Now Playing</title>
-                                <meta name="title" content="Avengers: Infinity War | Trailer & Official Movie Site">
-                                <meta name="description" content="Avengers: Infinity War | Trailer & Official Movie Site">
-                                
-                                <meta name="og:title" content="Avengers: Infinity War | Trailer & Official Movie Site">
-                                <meta property="og:type" content="video.movie">
-                                <meta property="og:url" content="http://www.marvel.com/avengers">
-                                <meta property="og:title" content="Avengers: Infinity War">
-                                <meta property="og:description" content="As Avengers and their allies have continued to protect the world from threats too large for any one hero to handle, a new danger has emerged from the cosmic shadows: Thanos. A despot of intergalactic infamy, his goal is to collect all six Infinity ...">
-                                <meta property="og:site_name" content="Avengers: Infinity War">
-                            
-                                <meta name="twitter:card" content="summary_large_image">
-                                <meta name="twitter:site" content="@Marvel">
-                                <meta name="twitter:title" content="Avengers: Infinity War">
-                                <meta name="twitter:description" content="As Avengers and their allies have continued to protect the world from threats too large for any one hero to handle, a new danger has emerged from the cosmic shadows: Thanos. A despot of intergalactic infamy, his goal is to collect all six Infinity ...">
-                                <meta name="twitter:url" content="http://www.marvel.com/avengers">
-                                <meta name="twitter:domain" content="http://www.marvel.com">
-                                
-                                <base href="https://i.annihil.us/u/prod/marvel/movies/infinitywar/">
-                            
-                            <meta property="og:image" content="https://i.annihil.us/u/prod/marvel/movies/infinitywar/images/share.jpg">
-                            <meta name="twitter:image" content="https://i.annihil.us/u/prod/marvel/movies/infinitywar/images/share.jpg">
-                            <link rel="canonical" href="http://www.marvel.com/avengers">
-                            <link rel="image_src" type="image/jpeg" href="https://i.annihil.us/u/prod/marvel/movies/infinitywar/images/share.jpg">
-                            <link rel="shortcut icon" href="https://i.annihil.us/u/prod/marvel/movies/infinitywar/images/favicon.png">
-                                <link href="https://i.annihil.us/u/prod/marvel/s/css/30bd8023a0bd2ea1d18368e8e4dde32a.css" rel="stylesheet">
-                                <link href="https://i.annihil.us/u/prod/marvel/s/css/7e78dc308009667c6467c52cd317b7ce.css" rel="stylesheet">
-                                <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,900i" rel="stylesheet">
-                                <script type="text/javascript">
-                                  var SITE = SITE || {};
-                                  SITE.dom = '';
-                                </script>
-                                <script type="text/javascript" src="//marvel.com/i/js/marvel-widgets.js"></script>
-                                <script type="text/javascript">
-                                  var URLs = {
-                                  	'login': 'https://secure.marvel.com/user/login?referer=http%3A%2F%2Fmarvel.com%2Favengers',
-                                  	'signup': 'https://secure.marvel.com/user/register?referer=http%3A%2F%2Fmarvel.com%2Favengers',
-                                  	'comicReader': 'https://reader.marvel.com/#/issue/',
-                                  	'rpxWidgetUrl': 'https://widget-cdn.rpxnow.com/js/lib/forge.marvel.com/widget.js',
-                                  	'rpxWidgetUrlSecure': 'https://rpxnow.com/js/lib/forge.marvel.com/widget.js'
-                                  };
-                                  MarvelWidgets.init({
-                                  	home_url: "https://www.marvel.com/avengers",
-                                  	current_section: "movies",
-                                  	staging: "https://marvel.com",
-                                  	targets: {
-                                  		topnav: "marvelMenu"
-                                  	},
-                                  	settings: {
-                                  		exclude_search: true,
-                                  		exclude_login: true,
-                                  		small_nav: true,
-                                  		responsive: true,
-                                  		version: 2
-                                  	}
-                                  });
-                                </script>
-                                <link rel="stylesheet" type="text/css" href="css/main.css">
-                              </head>
-                              <body>
-                                <div id="marvelMenu"></div>
-                                <div id="preloader" class="TL">
-                                    <div id="preloadBarBlock" class="C">
-                                      <svg height="70" width="70" class="TL" viewport="0 0 70 70" id="preloadCircle">
-                                        <circle cx="35" cy="35" r="33" id="preloadCircleInner"/>
-                                      </svg>
-                                      <img src="./images/aBadge.png" alt="Avengers: Infinity War" id="preloadLogo" class="C">
-                                  </div>
-                                </div>
-                                <div id="content">
-                                  <div id="shell"></div>
-                                  <div id="foot">
-                                    <a target="_blank" href="http://disneytermsofuse.com/" class="exit">Terms of Use</a>
-                                    <a target="_blank" href="https://disneyprivacycenter.com/" class="exit">Privacy Policy</a>
-                                    <a target="_blank" href="https://disneyprivacycenter.com/notice-to-california-residents/" class="exit">Your California Privacy Rights</a>
-                                    <a target="_blank" href="https://privacy.thewaltdisneycompany.com/en/for-parents/childrens-online-privacy-policy/" class="exit">Children's Privacy Policy</a>
-                                    <a target="_blank" href="http://marvel.com/corporate/license_tou/" class="exit">License Agreement</a>
-                                    <a target="_blank" href="http://preferences-mgr.truste.com/?type=marvel&affiliateId=115" class="exit">Interest-Based Ads</a>
-                                    <div class="copyright">© 2018 MARVEL</div>
-                                  </div>
-                                </div>
-                                <script type="text/javascript" src="js/settings.js"></script>
-                                <script src="js/main.js"></script>
-                                <script type="text/javascript">
-                                  var utag_data = {
-                                      page_name: "movies | microsite | Avengers: Infinity War Movie Trailer, Release",
-                                      site_section: "movies",
-                                      tag_type: "view",
-                                      rsid: "marveldotcomv3"
-                                  }
-                              </script>
-                              <script type="text/javascript">
-                                  ! function(e, t, a, n) {
-                                      e = "//tags.tiqcdn.com/utag/disney/marvel/prod/utag.js", a = "script", (n = (t = document).createElement(a)).src = e, n.type = "text/java" + a, n.async = !0, (e = t.getElementsByTagName(a)[0]).parentNode.insertBefore(n, e)
-                                  }()
-                              </script>
-                              <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"77ea7d863b","applicationID":"84712622","transactionName":"b1FXYkYFWUcEBUNaClYbdFVADVhaSgJSVQRNWEEZXBBaWEgWVlQAF11bUlEc","queueTime":0,"applicationTime":236,"atts":"QxZUFA4fSkk=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
-                            </html>
+1 < Content-Length: 92
+1 < Content-Type: application/json
+1 < Date: Thu, 22 Nov 2018 22:40:56 GMT
+1 < x-amz-apigw-id: QySC1EatIAMF08Q=
+1 < x-amzn-RequestId: ad187432-eea7-11e8-b926-43c327409857
+{
+    "id":"aaaa-bbbb-cccc-dddd",
+    "name":"Iron Man",
+    "secretIdentity":"Tony Stark"
+}
+
+20:42:35.825 karate.env system property was: null 
+20:42:35.830 request:
+1 > POST https://4r0rh8hgzd.execute-api.us-east-1.amazonaws.com/dev/avengers
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 49
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: 4r0rh8hgzd.execute-api.us-east-1.amazonaws.com
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_112)
+{"name":"Iron Man","secretIdentity":"Tony Stark"}
+
+20:42:36.308 response time in milliseconds: 477
+1 < 201
+1 < Connection: keep-alive
+1 < Content-Length: 92
+1 < Content-Type: application/json
+1 < Date: Thu, 22 Nov 2018 22:40:57 GMT
+1 < x-amz-apigw-id: QySC7E-EIAMFaaw=
+1 < x-amzn-RequestId: ad69a18e-eea7-11e8-9918-091a9c43dbd2
+{
+  "id" : "aaaa-bbbb-cccc-dddd",
+  "name" : "Iron Man",
+  "secretIdentity" : "Tony Stark"
+}
+
+20:42:36.322 karate.env system property was: null 
+20:42:36.324 request:
+1 > POST https://4r0rh8hgzd.execute-api.us-east-1.amazonaws.com/dev/avengers
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 31
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: 4r0rh8hgzd.execute-api.us-east-1.amazonaws.com
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_112)
+{"secretIdentity":"Tony Stark"}
+
+20:42:36.826 response time in milliseconds: 501
+1 < 400
+1 < Connection: keep-alive
+1 < Content-Length: 35
+1 < Content-Type: application/json
+1 < Date: Thu, 22 Nov 2018 22:40:57 GMT
+1 < x-amz-apigw-id: QySDAFg6oAMFxUA=
+1 < x-amzn-RequestId: adb7c175-eea7-11e8-ae40-db776812ee65
+{"message": "Invalid request body"}
+
+20:42:36.836 karate.env system property was: null 
+20:42:36.838 request:
+1 > DELETE https://4r0rh8hgzd.execute-api.us-east-1.amazonaws.com/dev/avengers/aaaa-bbbb-cccc-dddd
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: 4r0rh8hgzd.execute-api.us-east-1.amazonaws.com
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_112)
+
+20:42:37.346 response time in milliseconds: 507
+1 < 204
+1 < Connection: keep-alive
+1 < Content-Length: 0
+1 < Content-Type: application/json
+1 < Date: Thu, 22 Nov 2018 22:40:58 GMT
+1 < x-amz-apigw-id: QySDFFAcIAMFqCg=
+1 < x-amzn-RequestId: ae0878c2-eea7-11e8-9cae-cd53a61d3e7a
+
+20:42:37.358 karate.env system property was: null 
+20:42:37.360 request:
+1 > PUT https://4r0rh8hgzd.execute-api.us-east-1.amazonaws.com/dev/avengers/aaaa-bbbb-cccc-dddd
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 49
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: 4r0rh8hgzd.execute-api.us-east-1.amazonaws.com
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_112)
+{"name":"Iron Man","secretIdentity":"Tony Stark"}
+
+20:42:37.853 response time in milliseconds: 493
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Length: 92
+1 < Content-Type: application/json
+1 < Date: Thu, 22 Nov 2018 22:40:58 GMT
+1 < x-amz-apigw-id: QySDKFc2oAMF9Rg=
+1 < x-amzn-RequestId: ae514209-eea7-11e8-9909-4526ee551ab7
+{
+  "id" : "aaaa-bbbb-cccc-dddd",
+  "name" : "Iron Man",
+  "secretIdentity" : "Tony Stark"
+}
+
+20:42:37.865 karate.env system property was: null 
+20:42:37.867 request:
+1 > PUT https://4r0rh8hgzd.execute-api.us-east-1.amazonaws.com/dev/avengers/aaaa-bbbb-cccc-dddd
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 31
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: 4r0rh8hgzd.execute-api.us-east-1.amazonaws.com
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_112)
+{"secretIdentity":"Tony Stark"}
+
+20:42:38.325 response time in milliseconds: 458
+1 < 400
+1 < Connection: keep-alive
+1 < Content-Length: 35
+1 < Content-Type: application/json
+1 < Date: Thu, 22 Nov 2018 22:40:59 GMT
+1 < x-amz-apigw-id: QySDPHF5IAMFi_Q=
+1 < x-amzn-RequestId: ae9cc97e-eea7-11e8-a01e-41c616d04c0e
+{"message": "Invalid request body"}
 
 
-12:55:20.011 xml parsing failed, response data type set to string: org.xml.sax.SAXParseException; lineNumber: 5; columnNumber: 411; O tipo de elemento "n.length" deve ser seguido pelas especificações do atributo, ">" ou "/>".
+                        <a href="https://www.marvel.com/signin">
+                            <svg class="desktop-signin" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 65.6 66.7"><path fill-rule="evenodd" d="M59.5 15.1L53 51.4c0 .4-.3.6-.6.6h-6.5c-.3 0-.6-.2-.8-.6l-8.8-24.7H36l-4.3 24.7c-.1.3-.3.6-.6.6H25c-.3 0-.6-.2-.5-.6l6.6-37.3c.1-.3.3-.6.6-.6h6.4c.5 0 .7.2.8.6l8.8 24.7h.3l5.5-30.4C47.9 3.7 40.6.9 32.7.9 14.7.9.2 15.5.2 33.4c0 8.8 3.5 16.7 9.1 22.5l7.3-41.7c.1-.3.3-.6.6-.6H24c.3 0 .5.2.5.6l-8.3 47.2c4.8 2.8 10.4 4.5 16.4 4.5 17.9 0 32.5-14.5 32.5-32.5 0-6.8-2.1-13.1-5.6-18.3z"></path></svg>
+                            <svg class="mobile-signin" xmlns="http://www.w3.org/2000/svg" width="24" height="16" viewBox="0 0 24 16"><g fill-rule="evenodd"><path d="M0 14h24v2H0zM0 8h24v2H0zM0 2h24v2H0z"></path></g></svg>
+                            <span>Sign In</span></a>
+                    
+                    </li>
+                    <a id="marvel-logo" href="https://www.marvel.com"></a>
+                    <li class="search">
+                        <a href="https://www.marvel.com/search"><svg xmlns="http://www.w3.org/2000/svg" width="19" height="17" viewBox="0 0 19 17"><g fill-rule="evenodd" stroke-width="2"><circle cx="6.5" cy="6.5" r="5.5"></circle><path d="M14 14l3.536 3.536"></path></g></svg></a>
+                    </li>
+                </ol>
+            </div>
+            <div class="lower-nav">
+                <ol>
+                    <a href="https://www.marvel.com/watch"><li>Watch</li></a>
+                    <a href="https://www.marvel.com/explore"><li>Explore</li></a>
+                    <a href="https://www.marvel.com/comics"><li>Read</li></a>
+                    <a href="https://www.marvel.com/movies"><li>Movies</li></a>
+                    <a href="https://www.marvel.com/tv-shows"><li>TV</li></a>
+                    <a href="https://www.marvel.com/games"><li>Games</li></a>
+                    <a href="https://www.marvel.com/podcasts"><li>Podcasts</li></a>
+                    <a href="https://shop.marvel.com"><li>Shop</li></a>
+                </ol>
+            </div>
+        </nav>
+        <link href="https://i.annihil.us/u/prod/marvel/html_blocks_assets/error-pages/static/top-nav-static.css" rel="stylesheet" />
+    </header>
+    <section id="error-status" class="error-status" data-state="1">
+        <div class="overlay"></div>
+        <div class="flex-wrapper no-pad">
+            <div class="flex-col">
+                <div class="error-copy">
+                    <h1>404 Page Not Found</h1>
+                    <h6></h6>
+                    <p>Check that you typed the address correctly, go back to your previous page or try using our site search
+                        to find something specific.</p>
+                </div>
+            </div>
+            <div class="flex-col toAnimate no-pad">
+                <div class="error-image-animate"></div>
+            </div>
+        </div>
+        <script src="https://i.annihil.us/u/prod/marvel/html_blocks_assets/error-pages/terrigen/prod/js/main-ec0b804c01.js"></script>
+    </section>
+    <footer class="static-footer">
+        <nav>
+            <ol>
+                <a href="https://disneytermsofuse.com/">Terms of Use</a>
+                <a href="https://disneyprivacycenter.com/">Privacy Policy</a>
+                <a href="https://disneyprivacycenter.com/notice-to-california-residents">Your California Privacy Rights</a>
+                <a href="https://disneyprivacycenter.com/kids-privacy-policy/english/">Children's Online Privacy Policy</a>
+            </ol>
+            <ol>
+                <a href="/corporate/license_tou">License Agreement</a>
+                <a href="https://preferences-mgr.truste.com/?pid=disney01&aid=marvel01&type=marvel">Internet-Based Ads</a>
+                <a href="/corporate/insider_terms">Marvel Insider Terms</a>
+                <a>&copy; 2018 MARVEL</a>
+            </ol>
+            <style type="text/css">
+                footer.static-footer {
+                    width: 100%;
+                }
+
+                footer.static-footer nav {
+                    max-width: 1240px;
+                    margin: 0 auto;
+                    padding: 40px 30px 20px;
+                    display: flex;
+                    flex-wrap: wrap;
+                }
+
+                footer.static-footer nav ol {
+                    flex: 1;
+                    display: flex;
+                    flex-wrap: wrap;
+                }
+
+                footer.static-footer nav ol:first-of-type {
+                    padding-right: 15px;
+                }
+
+                footer.static-footer nav ol:last-of-type {
+                    padding-left: 15px;
+                }
+
+                footer.static-footer nav ol a {
+                    flex: 0 0 100%;
+                    font-size: 12px;
+                    margin-bottom: 15px;
+                    color: #c3c3c3 !important;
+                    text-decoration: none !important;
+                }
+
+                @media screen and (min-width: 841px) {
+                    footer.static-footer nav ol a {
+                        flex: 1;
+                        padding: 0 10px 0 20px;
+                        text-align: center;
+                    }
+
+                    footer.static-footer nav ol:first-of-type,
+                    footer.static-footer nav ol:last-of-type {
+                        padding: 0;
+                    }
+                }
+            </style>
+        </nav>
+    </footer>
+    <script type="text/javascript">_satellite.track('errorPageLoad'); _satellite.pageBottom();</script>
+</body>
+
+</html>
+
+20:44:25.253 xml parsing failed, response data type set to string: org.xml.sax.SAXParseException; lineNumber: 58; columnNumber: 3; O tipo de elemento link" deve ser encerrado pela tag final correspondente "</link>".
+20:44:25.260 status code was: 404, expected: 200, response time: 1619, url: https://www.marvel.com/avengers/aaaa-bbbb-cccc-dddd, response: <!DOCTYPE html>
+<html>
+
+<head>
+    <title>Marvel.com</title>
+    <meta charset="utf-8" />
+    <meta name="robots" content="noindex,nofollow">
+    <meta name="description" content="Marvel.com is the source for Marvel comics, digital comics, comic strips, and more featuring Iron Man, Spider-Man, Hulk, X-Men and all your favorite superheroes.">
+    <meta name="twitter:description" content="Marvel.com is the source for Marvel comics, digital comics, comic strips, and more featuring Iron Man, Spider-Man, Hulk, X-Men and all your favorite superheroes.">
+    <meta property="og:description" content="Marvel.com is the source for Marvel comics, digital comics, comic strips, and more featuring Iron Man, Spider-Man, Hulk, X-Men and all your favorite superheroes.">
+    <!-- Google Search Console config -->
+    <meta name="google-site-verification" content="f1YswNYUVb2d0dy07Y7soM6FzZ3rQ4xsfVV-11yCcQc">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no">
+    <meta name="theme-color" content="#eb2328">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- Icons and favicons -->
+    <link rel="icon" href="https://i.annihil.us/u/prod/misc/favicon/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="https://i.annihil.us/u/prod/misc/favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="https://i.annihil.us/u/prod/misc/favicon/apple-touch-icon-60.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="https://i.annihil.us/u/prod/misc/favicon/apple-touch-icon-76.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="https://i.annihil.us/u/prod/misc/favicon/apple-touch-icon-120.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="https://i.annihil.us/u/prod/misc/favicon/apple-touch-icon-152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://i.annihil.us/u/prod/misc/favicon/apple-touch-icon-180.png">
+    <meta name="msapplication-TileImage" content="https://i.annihil.us/u/prod/misc/favicon/apple-touch-icon-152.png">
+    <meta name="twitter:site" content="@Marvel">
+    <meta property="og:site_name" content="Marvel.com">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:creator" content="@Marvel">
+    <meta property="fb:app_id" content="193166954153103">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="content-type" content="text/html;charset=utf-8">
+    <!-- Analytics-->
+    <script src="//assets.adobedtm.com/bc7edc03f3b671a5b00119b4d88ffade87a3e20f/satelliteLib-7e2bcd047fa8273c37190fbf382316c5c0b99379.js"></script>
+    <script>
+        window.digitalData = {
+            'content': null,
+            'pageInfo': {
+                'pageName': ''
+            },
+            'category': {
+                'businessunit': 'marveldotcom',
+                'contentType': 'error_page',
+                'pageType': 'errorpage',
+                'errorType': '404',
+                'pageId': '',
+                'siteSection': 'error',
+                'subSectionL2': '',
+                'subSectionL3': '',
+                'subSectionL4': '',
+            },
+        };
+    </script>
+    <!-- Assets -->
+    <link rel="stylesheet" type="text/css" href="https://i.annihil.us/u/prod/marvel/html_blocks_assets/error-pages/terrigen/prod/css/main-81ea9ddd1e.css">
+    <script src="https://i.annihil.us/u/prod/marvel/i/js/jquery-3.3.1.min.js"></script>
+</head>
+
+<body class="error-status-page">
+    <!-- This is an Apache served error page for status code: 404 -->
+    <header class="static-header">
+        <nav>
+            <div class="upper-nav">
+                <ol>
+                    <li class="signin">
+                        <a href="https://www.marvel.com/signin">
+                            <svg class="desktop-signin" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 65.6 66.7"><path fill-rule="evenodd" d="M59.5 15.1L53 51.4c0 .4-.3.6-.6.6h-6.5c-.3 0-.6-.2-.8-.6l-8.8-24.7H36l-4.3 24.7c-.1.3-.3.6-.6.6H25c-.3 0-.6-.2-.5-.6l6.6-37.3c.1-.3.3-.6.6-.6h6.4c.5 0 .7.2.8.6l8.8 24.7h.3l5.5-30.4C47.9 3.7 40.6.9 32.7.9 14.7.9.2 15.5.2 33.4c0 8.8 3.5 16.7 9.1 22.5l7.3-41.7c.1-.3.3-.6.6-.6H24c.3 0 .5.2.5.6l-8.3 47.2c4.8 2.8 10.4 4.5 16.4 4.5 17.9 0 32.5-14.5 32.5-32.5 0-6.8-2.1-13.1-5.6-18.3z"></path></svg>
+                            <svg class="mobile-signin" xmlns="http://www.w3.org/2000/svg" width="24" height="16" viewBox="0 0 24 16"><g fill-rule="evenodd"><path d="M0 14h24v2H0zM0 8h24v2H0zM0 2h24v2H0z"></path></g></svg>
+                            <span>Sign In</span></a>
+                    
+                    </li>
+                    <a id="marvel-logo" href="https://www.marvel.com"></a>
+                    <li class="search">
+                        <a href="https://www.marvel.com/search"><svg xmlns="http://www.w3.org/2000/svg" width="19" height="17" viewBox="0 0 19 17"><g fill-rule="evenodd" stroke-width="2"><circle cx="6.5" cy="6.5" r="5.5"></circle><path d="M14 14l3.536 3.536"></path></g></svg></a>
+                    </li>
+                </ol>
+            </div>
+            <div class="lower-nav">
+                <ol>
+                    <a href="https://www.marvel.com/watch"><li>Watch</li></a>
+                    <a href="https://www.marvel.com/explore"><li>Explore</li></a>
+                    <a href="https://www.marvel.com/comics"><li>Read</li></a>
+                    <a href="https://www.marvel.com/movies"><li>Movies</li></a>
+                    <a href="https://www.marvel.com/tv-shows"><li>TV</li></a>
+                    <a href="https://www.marvel.com/games"><li>Games</li></a>
+                    <a href="https://www.marvel.com/podcasts"><li>Podcasts</li></a>
+                    <a href="https://shop.marvel.com"><li>Shop</li></a>
+                </ol>
+            </div>
+        </nav>
+        <link href="https://i.annihil.us/u/prod/marvel/html_blocks_assets/error-pages/static/top-nav-static.css" rel="stylesheet" />
+    </header>
+    <section id="error-status" class="error-status" data-state="1">
+        <div class="overlay"></div>
+        <div class="flex-wrapper no-pad">
+            <div class="flex-col">
+                <div class="error-copy">
+                    <h1>404 Page Not Found</h1>
+                    <h6></h6>
+                    <p>Check that you typed the address correctly, go back to your previous page or try using our site search
+                        to find something specific.</p>
+                </div>
+            </div>
+            <div class="flex-col toAnimate no-pad">
+                <div class="error-image-animate"></div>
+            </div>
+        </div>
+        <script src="https://i.annihil.us/u/prod/marvel/html_blocks_assets/error-pages/terrigen/prod/js/main-ec0b804c01.js"></script>
+    </section>
+    <footer class="static-footer">
+        <nav>
+            <ol>
+                <a href="https://disneytermsofuse.com/">Terms of Use</a>
+                <a href="https://disneyprivacycenter.com/">Privacy Policy</a>
+                <a href="https://disneyprivacycenter.com/notice-to-california-residents">Your California Privacy Rights</a>
+                <a href="https://disneyprivacycenter.com/kids-privacy-policy/english/">Children's Online Privacy Policy</a>
+            </ol>
+            <ol>
+                <a href="/corporate/license_tou">License Agreement</a>
+                <a href="https://preferences-mgr.truste.com/?pid=disney01&aid=marvel01&type=marvel">Internet-Based Ads</a>
+                <a href="/corporate/insider_terms">Marvel Insider Terms</a>
+                <a>&copy; 2018 MARVEL</a>
+            </ol>
+            <style type="text/css">
+                footer.static-footer {
+                    width: 100%;
+                }
+
+                footer.static-footer nav {
+                    max-width: 1240px;
+                    margin: 0 auto;
+                    padding: 40px 30px 20px;
+                    display: flex;
+                    flex-wrap: wrap;
+                }
+
+                footer.static-footer nav ol {
+                    flex: 1;
+                    display: flex;
+                    flex-wrap: wrap;
+                }
+
+                footer.static-footer nav ol:first-of-type {
+                    padding-right: 15px;
+                }
+
+                footer.static-footer nav ol:last-of-type {
+                    padding-left: 15px;
+                }
+
+                footer.static-footer nav ol a {
+                    flex: 0 0 100%;
+                    font-size: 12px;
+                    margin-bottom: 15px;
+                    color: #c3c3c3 !important;
+                    text-decoration: none !important;
+                }
+
+                @media screen and (min-width: 841px) {
+                    footer.static-footer nav ol a {
+                        flex: 1;
+                        padding: 0 10px 0 20px;
+                        text-align: center;
+                    }
+
+                    footer.static-footer nav ol:first-of-type,
+                    footer.static-footer nav ol:last-of-type {
+                        padding: 0;
+                    }
+                }
+            </style>
+        </nav>
+    </footer>
+    <script type="text/javascript">_satellite.track('errorPageLoad'); _satellite.pageBottom();</script>
+</body>
+
+</html>
+PageLoad'); _satellite.pageBottom();</script>
+</body>
+
+</html>
