@@ -4,6 +4,13 @@ Background:
 * url 'https://4r0rh8hgzd.execute-api.us-east-1.amazonaws.com/dev'
 
 
+Scenario: Should return not found Avenger
+
+Given path 'avengers', 'not-found-id'
+When method get
+Then status 404
+
+
 
 Scenario: Get Avenger by Id
 
