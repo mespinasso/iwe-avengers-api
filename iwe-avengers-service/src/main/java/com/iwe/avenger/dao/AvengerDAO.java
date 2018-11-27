@@ -25,4 +25,12 @@ public class AvengerDAO {
 		return newAvenger;
 	}
 
+	public void remove(Avenger avenger) {
+		
+	}
+
+	public Avenger update(Avenger avenger) {
+		return avenger;	
+	}
+
 }
