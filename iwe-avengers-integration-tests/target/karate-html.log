@@ -1,124 +1,44 @@
-20:22:45.951 karate.env system property was: null 
-20:22:46.205 request:
+20:56:44.132 karate.env system property was: null 
+20:56:44.367 request:
 1 > GET https://4r0rh8hgzd.execute-api.us-east-1.amazonaws.com/dev/avengers/not-found-id
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
 1 > Host: 4r0rh8hgzd.execute-api.us-east-1.amazonaws.com
 1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_112)
 
-20:22:47.080 response time in milliseconds: 875
+20:56:45.669 response time in milliseconds: 1297
 1 < 404
 1 < Connection: keep-alive
 1 < Content-Length: 308
 1 < Content-Type: application/json
-1 < Date: Tue, 27 Nov 2018 22:21:03 GMT
-1 < X-Amzn-Trace-Id: Root=1-5bfdc34f-98091f6638637212ba27a65c;Sampled=0
-1 < x-amz-apigw-id: RCt0XHU2IAMFlWQ=
-1 < x-amzn-RequestId: b9d214ff-f292-11e8-84ba-45d3b3644105
+1 < Date: Thu, 29 Nov 2018 22:55:00 GMT
+1 < X-Amzn-Trace-Id: Root=1-5c006e44-d64b6da2db48d9c182f14412;Sampled=0
+1 < x-amz-apigw-id: RJYqpHfDoAMFqWQ=
+1 < x-amzn-RequestId: ccd07559-f429-11e8-9a94-7b2efe66b547
 {"errorMessage":"[NotFound] - Avenger id: not-found-id","errorType":"com.iwe.avengers.exception.AvengerNotFoundException","stackTrace":["com.iwe.avengers.SearchAvengersHandler.handleRequest(SearchAvengersHandler.java:31)","com.iwe.avengers.SearchAvengersHandler.handleRequest(SearchAvengersHandler.java:1)"]}
 
-20:22:47.111 karate.env system property was: null 
-20:22:47.111 request:
-1 > GET https://4r0rh8hgzd.execute-api.us-east-1.amazonaws.com/dev/avengers/aaaa-bbbb-cccc-dddd
-1 > Accept-Encoding: gzip,deflate
-1 > Connection: Keep-Alive
-1 > Host: 4r0rh8hgzd.execute-api.us-east-1.amazonaws.com
-1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_112)
-
-20:22:47.580 response time in milliseconds: 469
-1 < 200
-1 < Connection: keep-alive
-1 < Content-Length: 76
-1 < Content-Type: application/json
-1 < Date: Tue, 27 Nov 2018 22:21:03 GMT
-1 < X-Amzn-Trace-Id: Root=1-5bfdc34f-41b8efa4f1e8a3ba466f4997;Sampled=0
-1 < x-amz-apigw-id: RCt0dEJUIAMF7xg=
-1 < x-amzn-RequestId: ba265038-f292-11e8-a72d-71d45472ab15
-{"id":"aaaa-bbbb-cccc-dddd","name":"Iron Man","secretIdentity":"Tony Stark"}
-
-20:22:47.589 karate.env system property was: null 
-20:22:47.604 request:
-1 > POST https://4r0rh8hgzd.execute-api.us-east-1.amazonaws.com/dev/avengers
-1 > Accept-Encoding: gzip,deflate
-1 > Connection: Keep-Alive
-1 > Content-Length: 49
-1 > Content-Type: application/json; charset=UTF-8
-1 > Host: 4r0rh8hgzd.execute-api.us-east-1.amazonaws.com
-1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_112)
-{"name":"Iron Man","secretIdentity":"Tony Stark"}
-
-20:22:48.066 response time in milliseconds: 462
-1 < 201
-1 < Connection: keep-alive
-1 < Content-Length: 62
-1 < Content-Type: application/json
-1 < Date: Tue, 27 Nov 2018 22:21:04 GMT
-1 < X-Amzn-Trace-Id: Root=1-5bfdc350-5fee1c48cdf4e8408ebc2e9a;Sampled=0
-1 < x-amz-apigw-id: RCt0hGYgoAMFcxQ=
-1 < x-amzn-RequestId: ba70ed2e-f292-11e8-8192-7fa29e92e801
-{"id":"53abc","name":"Iron Man","secretIdentity":"Tony Stark"}
-
-20:22:48.081 karate.env system property was: null 
-20:22:48.081 request:
-1 > POST https://4r0rh8hgzd.execute-api.us-east-1.amazonaws.com/dev/avengers
-1 > Accept-Encoding: gzip,deflate
-1 > Connection: Keep-Alive
-1 > Content-Length: 31
-1 > Content-Type: application/json; charset=UTF-8
-1 > Host: 4r0rh8hgzd.execute-api.us-east-1.amazonaws.com
-1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_112)
-{"secretIdentity":"Tony Stark"}
-
-20:22:48.519 response time in milliseconds: 438
-1 < 400
-1 < Connection: keep-alive
-1 < Content-Length: 35
-1 < Content-Type: application/json
-1 < Date: Tue, 27 Nov 2018 22:21:04 GMT
-1 < x-amz-apigw-id: RCt0mGk0IAMFx-A=
-1 < x-amzn-RequestId: bab8f2c9-f292-11e8-8314-b7a91ebbb8f1
-{"message": "Invalid request body"}
-
-20:22:48.535 karate.env system property was: null 
-20:22:48.535 request:
-1 > DELETE https://4r0rh8hgzd.execute-api.us-east-1.amazonaws.com/dev/avengers/aaaa-bbbb-cccc-dddd
-1 > Accept-Encoding: gzip,deflate
-1 > Connection: Keep-Alive
-1 > Host: 4r0rh8hgzd.execute-api.us-east-1.amazonaws.com
-1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_112)
-
-20:22:51.509 response time in milliseconds: 2974
-1 < 204
-1 < Connection: keep-alive
-1 < Content-Length: 0
-1 < Content-Type: application/json
-1 < Date: Tue, 27 Nov 2018 22:21:07 GMT
-1 < X-Amzn-Trace-Id: Root=1-5bfdc351-6dd5acf8e23da4c6b322fe04;Sampled=0
-1 < x-amz-apigw-id: RCt0rFd-oAMFbyQ=
-1 < x-amzn-RequestId: bafefce1-f292-11e8-a02d-9bd5058bcc84
-
-20:22:51.525 karate.env system property was: null 
-20:22:51.525 request:
+20:56:45.688 karate.env system property was: null 
+20:56:45.688 request:
 1 > DELETE https://4r0rh8hgzd.execute-api.us-east-1.amazonaws.com/dev/avengers/not-found-id
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
 1 > Host: 4r0rh8hgzd.execute-api.us-east-1.amazonaws.com
 1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_112)
 
-20:22:52.296 response time in milliseconds: 771
+20:56:46.510 response time in milliseconds: 822
 1 < 404
 1 < Connection: keep-alive
 1 < Content-Length: 304
 1 < Content-Type: application/json
-1 < Date: Tue, 27 Nov 2018 22:21:08 GMT
-1 < X-Amzn-Trace-Id: Root=1-5bfdc354-5966f078f594126e4d524bd6;Sampled=0
-1 < x-amz-apigw-id: RCt1JFpNoAMFUEg=
-1 < x-amzn-RequestId: bcc69dbd-f292-11e8-8ace-d954dcc8d201
+1 < Date: Thu, 29 Nov 2018 22:55:01 GMT
+1 < X-Amzn-Trace-Id: Root=1-5c006e45-9903c18833ce0544084b6542;Sampled=0
+1 < x-amz-apigw-id: RJYqzFnIoAMF2xg=
+1 < x-amzn-RequestId: cd6429f4-f429-11e8-8df3-53b9e414ac37
 {"errorMessage":"[NotFound] - Avenger id: not-found-id","errorType":"com.iwe.avengers.exception.AvengerNotFoundException","stackTrace":["com.iwe.avengers.RemoveAvengerHandler.handleRequest(RemoveAvengerHandler.java:31)","com.iwe.avengers.RemoveAvengerHandler.handleRequest(RemoveAvengerHandler.java:1)"]}
 
-20:22:52.296 karate.env system property was: null 
-20:22:52.312 request:
-1 > PUT https://4r0rh8hgzd.execute-api.us-east-1.amazonaws.com/dev/avengers/aaaa-bbbb-cccc-dddd
+20:56:46.525 karate.env system property was: null 
+20:56:46.541 request:
+1 > POST https://4r0rh8hgzd.execute-api.us-east-1.amazonaws.com/dev/avengers
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
 1 > Content-Length: 49
@@ -127,19 +47,119 @@
 1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_112)
 {"name":"Iron Man","secretIdentity":"Tony Stark"}
 
-20:22:55.237 response time in milliseconds: 2925
-1 < 200
+20:56:47.467 response time in milliseconds: 926
+1 < 201
 1 < Connection: keep-alive
-1 < Content-Length: 76
+1 < Content-Length: 93
 1 < Content-Type: application/json
-1 < Date: Tue, 27 Nov 2018 22:21:11 GMT
-1 < X-Amzn-Trace-Id: Root=1-5bfdc354-2b941b6047d7e9c88ef40fd8;Sampled=0
-1 < x-amz-apigw-id: RCt1RHz6IAMFhfg=
-1 < x-amzn-RequestId: bd44f501-f292-11e8-a89c-8f0bcdebdd0d
-{"id":"aaaa-bbbb-cccc-dddd","name":"Iron Man","secretIdentity":"Tony Stark"}
+1 < Date: Thu, 29 Nov 2018 22:55:02 GMT
+1 < X-Amzn-Trace-Id: Root=1-5c006e45-008ee4cad123dd20cc643d5c;Sampled=0
+1 < x-amz-apigw-id: RJYq7GftoAMF9sw=
+1 < x-amzn-RequestId: cde407b0-f429-11e8-a20a-571653c2ac20
+{"id":"34f600a4-e7a6-4cde-bb66-965f73431dfe","name":"Iron Man","secretIdentity":"Tony Stark"}
 
-20:22:55.254 karate.env system property was: null 
-20:22:55.254 request:
+20:56:47.483 request:
+2 > GET https://4r0rh8hgzd.execute-api.us-east-1.amazonaws.com/dev/avengers/34f600a4-e7a6-4cde-bb66-965f73431dfe
+2 > Accept-Encoding: gzip,deflate
+2 > Connection: Keep-Alive
+2 > Host: 4r0rh8hgzd.execute-api.us-east-1.amazonaws.com
+2 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_112)
+
+20:56:48.012 response time in milliseconds: 529
+2 < 200
+2 < Connection: keep-alive
+2 < Content-Length: 93
+2 < Content-Type: application/json
+2 < Date: Thu, 29 Nov 2018 22:55:03 GMT
+2 < X-Amzn-Trace-Id: Root=1-5c006e46-56eceda430a7570c8a54b7a0;Sampled=0
+2 < x-amz-apigw-id: RJYrFGUyoAMFQ5w=
+2 < x-amzn-RequestId: ce76360b-f429-11e8-8003-b703782d940a
+{"id":"34f600a4-e7a6-4cde-bb66-965f73431dfe","name":"Iron Man","secretIdentity":"Tony Stark"}
+
+20:56:48.027 karate.env system property was: null 
+20:56:48.027 request:
+1 > POST https://4r0rh8hgzd.execute-api.us-east-1.amazonaws.com/dev/avengers
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 31
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: 4r0rh8hgzd.execute-api.us-east-1.amazonaws.com
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_112)
+{"secretIdentity":"Tony Stark"}
+
+20:56:48.481 response time in milliseconds: 454
+1 < 400
+1 < Connection: keep-alive
+1 < Content-Length: 35
+1 < Content-Type: application/json
+1 < Date: Thu, 29 Nov 2018 22:55:03 GMT
+1 < x-amz-apigw-id: RJYrKEwfoAMF7uw=
+1 < x-amzn-RequestId: cec69f96-f429-11e8-8ec6-c3f2bf66bdd8
+{"message": "Invalid request body"}
+
+20:56:48.489 karate.env system property was: null 
+20:56:48.489 request:
+1 > POST https://4r0rh8hgzd.execute-api.us-east-1.amazonaws.com/dev/avengers
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 39
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: 4r0rh8hgzd.execute-api.us-east-1.amazonaws.com
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_112)
+{"name":"Iron","secretIdentity":"Tony"}
+
+20:56:48.982 response time in milliseconds: 493
+1 < 201
+1 < Connection: keep-alive
+1 < Content-Length: 83
+1 < Content-Type: application/json
+1 < Date: Thu, 29 Nov 2018 22:55:03 GMT
+1 < X-Amzn-Trace-Id: Root=1-5c006e47-5756e17c027bcb63a536db44;Sampled=0
+1 < x-amz-apigw-id: RJYrPHgPIAMFVpA=
+1 < x-amzn-RequestId: cf0dbb3d-f429-11e8-b48b-a3d8a280717d
+{"id":"9b8e96c1-80bb-44ed-bfd9-6756206158a0","name":"Iron","secretIdentity":"Tony"}
+
+20:56:48.982 request:
+2 > PUT https://4r0rh8hgzd.execute-api.us-east-1.amazonaws.com/dev/avengers/9b8e96c1-80bb-44ed-bfd9-6756206158a0
+2 > Accept-Encoding: gzip,deflate
+2 > Connection: Keep-Alive
+2 > Content-Length: 49
+2 > Content-Type: application/json; charset=UTF-8
+2 > Host: 4r0rh8hgzd.execute-api.us-east-1.amazonaws.com
+2 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_112)
+{"name":"Iron Man","secretIdentity":"Tony Stark"}
+
+20:56:49.779 response time in milliseconds: 797
+2 < 200
+2 < Connection: keep-alive
+2 < Content-Length: 93
+2 < Content-Type: application/json
+2 < Date: Thu, 29 Nov 2018 22:55:04 GMT
+2 < X-Amzn-Trace-Id: Root=1-5c006e48-58909d80528fa540dd32e380;Sampled=0
+2 < x-amz-apigw-id: RJYrUH42oAMFw-g=
+2 < x-amzn-RequestId: cf5a541e-f429-11e8-9de8-0bca9cd23b15
+{"id":"9b8e96c1-80bb-44ed-bfd9-6756206158a0","name":"Iron Man","secretIdentity":"Tony Stark"}
+
+20:56:49.792 request:
+3 > GET https://4r0rh8hgzd.execute-api.us-east-1.amazonaws.com/dev/avengers/9b8e96c1-80bb-44ed-bfd9-6756206158a0
+3 > Accept-Encoding: gzip,deflate
+3 > Connection: Keep-Alive
+3 > Host: 4r0rh8hgzd.execute-api.us-east-1.amazonaws.com
+3 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_112)
+
+20:56:50.301 response time in milliseconds: 509
+3 < 200
+3 < Connection: keep-alive
+3 < Content-Length: 93
+3 < Content-Type: application/json
+3 < Date: Thu, 29 Nov 2018 22:55:05 GMT
+3 < X-Amzn-Trace-Id: Root=1-5c006e49-0f2354429cad8b23298d8403;Sampled=0
+3 < x-amz-apigw-id: RJYrcEm0IAMF1jA=
+3 < x-amzn-RequestId: cfd5022f-f429-11e8-9288-91c6669e73bf
+{"id":"9b8e96c1-80bb-44ed-bfd9-6756206158a0","name":"Iron Man","secretIdentity":"Tony Stark"}
+
+20:56:50.301 karate.env system property was: null 
+20:56:50.317 request:
 1 > PUT https://4r0rh8hgzd.execute-api.us-east-1.amazonaws.com/dev/avengers/aaaa-bbbb-cccc-dddd
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
@@ -149,18 +169,18 @@
 1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_112)
 {"secretIdentity":"Tony Stark"}
 
-20:22:55.707 response time in milliseconds: 453
+20:56:50.780 response time in milliseconds: 463
 1 < 400
 1 < Connection: keep-alive
 1 < Content-Length: 35
 1 < Content-Type: application/json
-1 < Date: Tue, 27 Nov 2018 22:21:11 GMT
-1 < x-amz-apigw-id: RCt1uHtboAMFi-g=
-1 < x-amzn-RequestId: bf00d59a-f292-11e8-9255-1f92fea944d7
+1 < Date: Thu, 29 Nov 2018 22:55:05 GMT
+1 < x-amz-apigw-id: RJYrhHP3IAMF-Gg=
+1 < x-amzn-RequestId: d0245ad4-f429-11e8-953f-0975206c01f3
 {"message": "Invalid request body"}
 
-20:22:55.707 karate.env system property was: null 
-20:22:55.707 request:
+20:56:50.783 karate.env system property was: null 
+20:56:50.783 request:
 1 > PUT https://4r0rh8hgzd.execute-api.us-east-1.amazonaws.com/dev/avengers/not-found-id
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
@@ -170,90 +190,75 @@
 1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_112)
 {"name":"Iron Man","secretIdentity":"Tony Stark"}
 
-20:22:56.487 response time in milliseconds: 780
+20:56:51.338 response time in milliseconds: 555
 1 < 404
 1 < Connection: keep-alive
 1 < Content-Length: 308
 1 < Content-Type: application/json
-1 < Date: Tue, 27 Nov 2018 22:21:12 GMT
-1 < X-Amzn-Trace-Id: Root=1-5bfdc358-c929d523a0bea171ee5e0461;Sampled=0
-1 < x-amz-apigw-id: RCt1zERQIAMF53w=
-1 < x-amzn-RequestId: bf48b4bf-f292-11e8-b2b9-cb9acace5c13
+1 < Date: Thu, 29 Nov 2018 22:55:06 GMT
+1 < X-Amzn-Trace-Id: Root=1-5c006e4a-84895874c415858fa1f4ede4;Sampled=0
+1 < x-amz-apigw-id: RJYrmHS_IAMFc7A=
+1 < x-amzn-RequestId: d071df11-f429-11e8-bd45-c5ff9a5473e2
 {"errorMessage":"[NotFound] - Avenger id: not-found-id","errorType":"com.iwe.avengers.exception.AvengerNotFoundException","stackTrace":["com.iwe.avengers.UpdateAvengersHandler.handleRequest(UpdateAvengersHandler.java:31)","com.iwe.avengers.UpdateAvengersHandler.handleRequest(UpdateAvengersHandler.java:1)"]}
 
-dateAvengersHandler.java:17)","com.iwe.avengers.UpdateAvengersHandler.handleRequest(UpdateAvengersHandler.java:1)"]}
-
-8
+20:56:51.338 karate.env system property was: null 
+20:56:51.338 request:
+1 > POST https://4r0rh8hgzd.execute-api.us-east-1.amazonaws.com/dev/avengers
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 49
+1 > Content-Type: application/json; charset=UTF-8
 1 > Host: 4r0rh8hgzd.execute-api.us-east-1.amazonaws.com
 1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_112)
 {"name":"Iron Man","secretIdentity":"Tony Stark"}
 
-19:55:44.538 response time in milliseconds: 752
-1 < 404
+20:56:51.819 response time in milliseconds: 481
+1 < 201
 1 < Connection: keep-alive
-1 < Content-Length: 368
+1 < Content-Length: 93
 1 < Content-Type: application/json
-1 < Date: Tue, 27 Nov 2018 21:54:00 GMT
-1 < X-Amzn-Trace-Id: Root=1-5bfdbcf8-dd70f3e0441fc7f0c6785140;Sampled=0
-1 < x-amz-apigw-id: RCp2zHAVIAMFsMw=
-1 < x-amzn-RequestId: f28dd866-f28e-11e8-a298-791273bfbd67
-{"errorMessage":"[NotFound] - Avenger id: not-found-id","errorType":"com.iwe.avengers.exception.AvengerNotFoundException","stackTrace":["com.iwe.avenger.dao.AvengerDAO.update(AvengerDAO.java:43)","com.iwe.avengers.UpdateAvengersHandler.handleRequest(UpdateAvengersHandler.java:17)","com.iwe.avengers.UpdateAvengersHandler.handleRequest(UpdateAvengersHandler.java:1)"]}
+1 < Date: Thu, 29 Nov 2018 22:55:06 GMT
+1 < X-Amzn-Trace-Id: Root=1-5c006e4a-564c644c58668a66ff33a8dc;Sampled=0
+1 < x-amz-apigw-id: RJYrrGLuoAMFqsA=
+1 < x-amzn-RequestId: d0c02601-f429-11e8-831f-bd8a57e13f84
+{"id":"96aa7555-238e-43ef-9ffa-da5c9506eb2c","name":"Iron Man","secretIdentity":"Tony Stark"}
 
-{
-                    flex: 1;
-                    display: flex;
-                    flex-wrap: wrap;
-                }
+20:56:51.828 request:
+2 > DELETE https://4r0rh8hgzd.execute-api.us-east-1.amazonaws.com/dev/avengers/96aa7555-238e-43ef-9ffa-da5c9506eb2c
+2 > Accept-Encoding: gzip,deflate
+2 > Connection: Keep-Alive
+2 > Host: 4r0rh8hgzd.execute-api.us-east-1.amazonaws.com
+2 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_112)
 
-                footer.static-footer nav ol:first-of-type {
-                    padding-right: 15px;
-                }
+20:56:52.355 response time in milliseconds: 527
+2 < 204
+2 < Connection: keep-alive
+2 < Content-Length: 0
+2 < Content-Type: application/json
+2 < Date: Thu, 29 Nov 2018 22:55:07 GMT
+2 < X-Amzn-Trace-Id: Root=1-5c006e4b-85af96e8bd1ad701e07848d3;Sampled=0
+2 < x-amz-apigw-id: RJYrwELQIAMFxqw=
+2 < x-amzn-RequestId: d10b3847-f429-11e8-b300-25f1eeb80a95
 
-                footer.static-footer nav ol:last-of-type {
-                    padding-left: 15px;
-                }
+20:56:52.355 request:
+3 > GET https://4r0rh8hgzd.execute-api.us-east-1.amazonaws.com/dev/avengers/96aa7555-238e-43ef-9ffa-da5c9506eb2c
+3 > Accept-Encoding: gzip,deflate
+3 > Connection: Keep-Alive
+3 > Host: 4r0rh8hgzd.execute-api.us-east-1.amazonaws.com
+3 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_112)
 
-                footer.static-footer nav ol a {
-                    flex: 0 0 100%;
-                    font-size: 12px;
-                    margin-bottom: 15px;
-                    color: #c3c3c3 !important;
-                    text-decoration: none !important;
-                }
+20:56:52.902 response time in milliseconds: 547
+3 < 404
+3 < Connection: keep-alive
+3 < Content-Length: 332
+3 < Content-Type: application/json
+3 < Date: Thu, 29 Nov 2018 22:55:07 GMT
+3 < X-Amzn-Trace-Id: Root=1-5c006e4b-c454343894eed554a9b99960;Sampled=0
+3 < x-amz-apigw-id: RJYr2FZvoAMFlWQ=
+3 < x-amzn-RequestId: d15cdacd-f429-11e8-84ba-45d3b3644105
+{"errorMessage":"[NotFound] - Avenger id: 96aa7555-238e-43ef-9ffa-da5c9506eb2c","errorType":"com.iwe.avengers.exception.AvengerNotFoundException","stackTrace":["com.iwe.avengers.SearchAvengersHandler.handleRequest(SearchAvengersHandler.java:31)","com.iwe.avengers.SearchAvengersHandler.handleRequest(SearchAvengersHandler.java:1)"]}
 
-                @media screen and (min-width: 841px) {
-                    footer.static-footer nav ol a {
-                        flex: 1;
-                        padding: 0 10px 0 20px;
-                        text-align: center;
-                    }
-
-                    footer.static-footer nav ol:first-of-type,
-                    footer.static-footer nav ol:last-of-type {
-                        padding: 0;
-                    }
-                }
-            </style>
-        </nav>
-    </footer>
-    <script type="text/javascript">_satellite.track('errorPageLoad'); _satellite.pageBottom();</script>
-</body>
-
-</html>
-
-20:44:25.253 xml parsing failed, response data type set to string: org.xml.sax.SAXParseException; lineNumber: 58; columnNumber: 3; O tipo de elemento link" deve ser encerrado pela tag final correspondente "</link>".
-20:44:25.260 status code was: 404, expected: 200, response time: 1619, url: https://www.marvel.com/avengers/aaaa-bbbb-cccc-dddd, response: <!DOCTYPE html>
-<html>
-
-<head>
-    <title>Marvel.com</title>
-    <meta charset="utf-8" />
-    <meta name="robots" content="noindex,nofollow">
-    <meta name="description" content="Marvel.com is the source for Marvel comics, digital comics, comic strips, and more featuring Iron Man, Spider-Man, Hulk, X-Men and all your favorite superheroes.">
-    <meta name="twitter:description" content="Marvel.com is the source for Marvel comics, digital comics, comic strips, and more featuring Iron Man, Spider-Man, Hulk, X-Men and all your favorite superheroes.">
-    <meta property="og:description" content="Marvel.com is the source for Marvel comics, digital comics, comic strips, and more featuring Iron Man, Spider-Man, Hulk, X-Men and all your favorite superheroes.">
-    <!-- Google Search Console config -->
-    <meta name="google-site-verification" content="f1YswNYUVb2d0dy07Y7soM6FzZ3rQ4xsfVV-11yCcQc">
+content="f1YswNYUVb2d0dy07Y7soM6FzZ3rQ4xsfVV-11yCcQc">
     <meta name="MobileOptimized" content="320">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no">
     <meta name="theme-color" content="#eb2328">
